@@ -23,7 +23,8 @@ int main()
   cout << "             Решето Эратосфена" << endl;
   cout << "Введите верхнюю границу целых значений - ";
   cin  >> n;
-  TBitField s(n + 1);
+
+ /* TBitField s(n + 1);
   // заполнение множества
   for (m = 2; m <= n; m++)
     s.SetBit(m);
@@ -90,5 +91,5 @@ int main()
   cout << endl;
   cout << "В первых " << n << " числах " << count << " простых" << endl;
 }
-
+*/
 #endif
