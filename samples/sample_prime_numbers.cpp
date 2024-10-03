@@ -7,12 +7,20 @@
 
 #include <iomanip>
 
-// #define USE_SET // Использовать класс TSet,
+#define USE_SET // Использовать класс TSet,
                 // закоментировать, чтобы использовать битовое поле
 
 #ifndef USE_SET // Использовать класс TBitField
 
 #include "tbitfield.h"
+
+/*int main()
+{
+    TBitField bf(50);
+    bf.SetBit(35);
+    cout << bf;
+}
+*/
 
 int main()
 {
@@ -24,7 +32,7 @@ int main()
   cout << "Введите верхнюю границу целых значений - ";
   cin  >> n;
 
- /* TBitField s(n + 1);
+  TBitField s(n + 1);
   // заполнение множества
   for (m = 2; m <= n; m++)
     s.SetBit(m);
@@ -51,6 +59,10 @@ int main()
   cout << endl;
   cout << "В первых " << n << " числах " << count << " простых" << endl;
 }
+
+
+
+
 #else
 
 #include "tset.h"
@@ -91,5 +103,5 @@ int main()
   cout << endl;
   cout << "В первых " << n << " числах " << count << " простых" << endl;
 }
-*/
+
 #endif
